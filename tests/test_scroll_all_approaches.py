@@ -8,32 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 @pytest.fixture(scope="function")
 def driver():
-    username = os.getenv("LT_USERNAME")
-    access_key = os.getenv("LT_ACCESS_KEY")
-    grid_url = "hub.lambdatest.com/wd/hub"
-
-    lt_options = {
-        "user": username,
-        "accessKey": access_key,
-        "build": "Scrolling in Selenium",
-        "name": "Scroll Test Case X",
-        "platformName": "Windows 11",
-        "browserName": "Chrome",
-        "browserVersion": "latest",
-        "selenium_version": "latest"
-    }
-
-    options = webdriver.ChromeOptions()
-    options.set_capability('LT:Options', lt_options)
-
-    url = f"https://{username}:{access_key}@{grid_url}"
-    
-    driver = webdriver.Remote(
-        command_executor=url,
-        options=options
-    )
-
-    #driver = webdriver.Chrome()
+    driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get("https://ecommerce-playground.lambdatest.io/")
 
@@ -73,4 +48,3 @@ def test_scroll_with_scrollBy(driver):
     product.click()
 
     assert "product_id=31" in driver.current_url
-

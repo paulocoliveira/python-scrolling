@@ -2,7 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from time import sleep
 
 driver = webdriver.Chrome()
 driver.maximize_window()
@@ -32,7 +31,5 @@ start_free_button.click()
 heading = wait.until(
     EC.visibility_of_element_located((By.XPATH, "//h2[contains(text(),'Get started for free')]"))
 )
-
-sleep(5)
 
 assert heading.is_displayed(), "Expected heading was not found on the new page"
