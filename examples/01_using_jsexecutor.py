@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome()
 driver.maximize_window()
-driver.get("https://www.lambdatest.com/selenium-playground/simple-form-demo")
+driver.get("https://www.testmuai.com/selenium-playground/simple-form-demo")
 
 # Locate the target element
 start_free_button = driver.find_element(By.XPATH, "//a[contains(text(),'Start free with Email')]")

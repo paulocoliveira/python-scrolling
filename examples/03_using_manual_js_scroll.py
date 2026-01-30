@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 driver = webdriver.Chrome()
 driver.maximize_window()
-driver.get("https://www.lambdatest.com/selenium-playground/simple-form-demo")
+driver.get("https://www.testmuai.com/selenium-playground/simple-form-demo")
 
 wait = WebDriverWait(driver, 10)
 

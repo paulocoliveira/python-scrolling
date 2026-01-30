@@ -2,7 +2,7 @@
 
 ## ？ What is this Repository about?
 
-- This repo contains example code of **How to croll to An Element in Selenium**, including a sample using JavaScriptExecutor, a sample using ActionChains, a sample using manual scroll, and a Python Selenium sample running on LambdaTest Cloud platform.
+- This repo contains example code of **How to croll to An Element in Selenium**, including a sample using JavaScriptExecutor, a sample using ActionChains, a sample using manual scroll, and a Python Selenium sample running on TestMu AI Cloud platform.
 - This project uses Pytest framework to run the tests.
 
 ## Running the Code
@@ -14,7 +14,7 @@ python script-name.py
 
 ## Running the Cloud Grid Sample
 
-By default, the test would be running on LambdaTest Platform on Chrome Browser, and on Windows 11.
+By default, the test would be running on TestMu AI Platform on Chrome Browser, and on Windows 11.
 
 As a prerequisite for this code, you need:
 1. Download and Install Python
@@ -39,4 +39,4 @@ pytest -s
   OR ping me on:
     - [LinkedIn](https://www.linkedin.com/in/pcesar/)
 
-### 💭 Checkout the blogs related to Testing on [LambdaTest blog](https://www.lambdatest.com/blog/author/paulocoliveira/).
+### 💭 Checkout the blogs related to Testing on [TestMu AI blog](https://www.testmuai.com/blog/author/paulocoliveira/).
